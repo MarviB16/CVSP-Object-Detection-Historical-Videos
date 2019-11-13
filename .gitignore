@@ -1,3 +1,13 @@
+#custom
+*.tar
+*.tar.gz
+
+#custom folder
+images_and_gt/
+videos/
+marvin_tmp/
+opencv/
+opencv_installed/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
