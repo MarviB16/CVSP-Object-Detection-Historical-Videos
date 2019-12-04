@@ -1,7 +1,7 @@
 #custom
 *.tar
 *.tar.gz
-
+*.h5
 #custom folder
 images_and_gt/
 videos/
@@ -9,6 +9,9 @@ marvin_tmp/
 opencv/
 opencv_installed/
 darknet/
+images_and_gt_marvin/
+VOCTemplate/
+output/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
