@@ -24,8 +24,8 @@ VOCTemplateTest/
 output_rum/
 retina_net_video/
 snapshots_ssd/
-ssd_keras/
 videos/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
