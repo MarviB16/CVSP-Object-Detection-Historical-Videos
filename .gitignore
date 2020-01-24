@@ -8,6 +8,9 @@
 *.list
 
 #custom folder
+custom_scripts/darknet_train/
+custom_scripts/darknet_val/
+custom_scripts/darknet_test/
 trash/
 images_and_gt/
 videos/
@@ -17,7 +20,7 @@ opencv_installed/
 opencv_contrib/
 darknet/output/
 darknet/backup/
-darknet/x64/
+darknet/x64_copy/
 darknet_test/
 darknet_train_dataset/
 darknet_val/
