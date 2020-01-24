@@ -8,6 +8,7 @@
 *.list
 
 #custom folder
+trash/
 images_and_gt/
 videos/
 marvin_tmp/
