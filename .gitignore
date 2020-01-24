@@ -2,6 +2,9 @@
 *.tar
 *.tar.gz
 *.h5
+*.weights
+*.conv
+
 #custom folder
 images_and_gt/
 videos/
@@ -9,7 +12,8 @@ marvin_tmp/
 opencv/
 opencv_installed/
 opencv_contrib/
-darknet/
+darknet/output/
+darknet/x64/
 darknet_test/
 darknet_train_dataset/
 darknet_val/
