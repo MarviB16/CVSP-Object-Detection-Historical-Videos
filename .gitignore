@@ -14,9 +14,9 @@ marvin_tmp/
 opencv/
 opencv_installed/
 opencv_contrib/
-darknet_copy/output/
-darknet_copy/backup/
-darknet_copy/x64/
+darknet/output/
+darknet/backup/
+darknet/x64/
 darknet_test/
 darknet_train_dataset/
 darknet_val/
