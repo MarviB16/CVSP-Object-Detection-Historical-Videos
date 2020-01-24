@@ -8,10 +8,24 @@ videos/
 marvin_tmp/
 opencv/
 opencv_installed/
+opencv_contrib/
 darknet/
+darknet_test/
+darknet_train_dataset/
+darknet_val/
+darknet_val_dataset/
+images_and_gt/
+images_and_gt_combined/
 images_and_gt_marvin/
+images_and_gt_test/
 VOCTemplate/
-output/
+VOCTemplateCombined/
+VOCTemplateTest/
+output_rum/
+retina_net_video/
+snapshots_ssd/
+ssd_keras/
+videos/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -117,3 +131,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
