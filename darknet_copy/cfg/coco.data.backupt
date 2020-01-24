@@ -1,0 +1,8 @@
+classes= 3
+train  = x64/Release/data/test.txt
+valid  = x64/Release/data/test.txt
+#valid = data/coco_val_5k.list
+names = data/coco.names
+backup = /home/pjreddie/backup/
+eval=coco
+
