@@ -1,0 +1,14 @@
+rsa==4.0
+pyasn1-modules==0.2.7
+keras==2.3.1
+requests-oauthlib==1.3.0
+cachetools==3.1.1
+keras-resnet==0.1.0
+progressbar2==3.47.0
+pyasn1==0.4.8
+google-auth-oauthlib==0.4.1
+oauthlib==3.1.0
+python-utils==2.3.0
+opencv-python==4.1.1.26
+google-auth==1.7.1
+keras-retinanet==0.5.1

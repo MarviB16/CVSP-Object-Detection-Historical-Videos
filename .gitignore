@@ -34,7 +34,7 @@ VOCTemplateCombined/
 VOCTemplateTest/
 output_rum/
 retina_net_video/
-snapshots_ssd/
+ssd_keras/snapshots_ssd/
 videos/
 
 
