@@ -204,9 +204,9 @@ to train the network. **-map** calculates the mean average presision every 1000 
 
 ## SSD
 
-Solarized dark             |  Solarized Ocean
+Precision-Recall-Curve Civilian    |  Precision-Recall-Curve Soldier
 :-------------------------:|:-------------------------:
-![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/jupyterOverview.png)  |  ![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/jupyterOverview.png)
+![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/with_aug_civilian.png)  |  ![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/with_aug_soldier.png)
 
 **Note**: Select the SSD kernel!
 
@@ -239,6 +239,10 @@ If you just want to redo the evaluation follow these steps:
  4. Run all sections **until cell 5**. This gives you the mAP and the Precision-Recall-Curve for civilian and soldier.
 
 ## RetinaNet
+
+Precision-Recall-Curve Civilian    |  Precision-Recall-Curve Soldier
+:-------------------------:|:-------------------------:
+![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/civilian_retinanet_50.png)  |  ![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/soldier_retinanet_50.png)
 
 **Note**: Select the RetinaNet kernel!
 
