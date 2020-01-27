@@ -204,6 +204,10 @@ to train the network. **-map** calculates the mean average presision every 1000 
 
 ## SSD
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/jupyterOverview.png)  |  ![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/jupyterOverview.png)
+
 **Note**: Select the SSD kernel!
 
 
