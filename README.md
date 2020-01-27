@@ -167,10 +167,13 @@ Copy:
 
 ## Darknet
 
+| Setting | Civilian | Soldier |
+|--|--|--|
+| With Aug. | 16,56 AP & 0,12 RC | 0,00 AP & 0,00 RC |
+| No Training | 36,94 AP & 0,31 RC | - |
+
 To install darknet and its prerequisites please follow the instructions of the original repo:
 https://github.com/AlexeyAB/darknet#requirements
-
-### Training
 
 After installing darknet and preparing the images and groundtruth, one must prepare the dataset. Instructions for this can be found here:
 
@@ -240,7 +243,7 @@ If you just want to redo the evaluation follow these steps:
 
 ## RetinaNet
 
-Precision-Recall-Curve Civilian    |  Precision-Recall-Curve Soldier
+Precision-Recall-Curve Civilian (ResNet50)   |  Precision-Recall-Curve Soldier (ResNet50)
 :-------------------------:|:-------------------------:
 ![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/civilian_retinanet_50.png)  |  ![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/soldier_retinanet_50.png)
 
