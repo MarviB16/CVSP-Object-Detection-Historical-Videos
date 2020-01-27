@@ -65,11 +65,32 @@ to install the kernel to Jupyter.
 As darknet doesn't use python (for training) no conda environment is needed.
 
 ## Jupyter
+Here a short introduction to Jupyter is given. In the following image one can see the interface of Jupyter. The buttons do the following (from left to right):
 
-	//todo
+  1. Save
+  2. New cell
+  3. Cut cell
+  4. Copy cell
+  5. Paste cell
+  6. One cell up
+  7. One cell down
+  8. Run the current cell
+  9. Interrupt kernel (Ctrl + C)
+  10. Reload kernel
+  11. Run all cells
+  12. Select what type of text is written in the cell (Markdown for documentation, Code for Python)
+  13. Command window
+
+![jupyter overview](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/jupyterOverview.png)
+
+In the following image one can see how to select a new kernel.
+
+![select kernel](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/changeKernel.png)
+
 
 ## Custom scripts
 
+**Note**: Select the Util kernel!
 Under custom_scripts/ one can find the script for the dataset preparation (copyImages.ipynb). Open it by using Jupyter, on a remote host run (Port forwarding must be enabled):
 
 > jupyter notebook --no-browser --port=8081
@@ -139,7 +160,7 @@ Copy:
 **VOC**: 
 Copy:
 
-	darknet_test/test_voc.txt --> VOCTemplate/VOC2019/ImageSets/Main/test.txt
+    darknet_test/test_voc.txt --> VOCTemplate/VOC2019/ImageSets/Main/test.txt
     darknet_test/images/*.jpg --> VOCTemplate/VOC2019/JPEGImages
     darknet_test/groundtruth_voc/*.txt --> VOCTemplate/VOC2019/Annotations
 
@@ -182,6 +203,7 @@ to train the network. **-map** calculates the mean average presision every 1000 
 
 ## SSD
 
+**Note**: Select the SSD kernel!
 Under ssd_keras/ one can find the scripts for training (cvsp_ssd300_training_custom.ipynb) and evaluating (cvsp_ssd300_evaluation.ipynb) SSD. Open them by using Jupyter, on a remote host run (Port forwarding must be enabled):
 
 > jupyter notebook --no-browser --port=8081
@@ -211,6 +233,7 @@ If you just want to redo the evaluation follow these steps:
 
 ## RetinaNet
 
+**Note**: Select the RetinaNet kernel!
 RetinaNet doesn't use a Jupyter notebook for training. For a detailed guide how to train RetinaNet take a look at the readme under keras_retinanet/README.md. 
 
 If you just want to redo the training use this command:
