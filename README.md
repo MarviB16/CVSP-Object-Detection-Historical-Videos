@@ -91,6 +91,7 @@ In the following image one can see how to select a new kernel.
 ## Custom scripts
 
 **Note**: Select the Util kernel!
+
 Under custom_scripts/ one can find the script for the dataset preparation (copyImages.ipynb). Open it by using Jupyter, on a remote host run (Port forwarding must be enabled):
 
 > jupyter notebook --no-browser --port=8081
@@ -204,6 +205,8 @@ to train the network. **-map** calculates the mean average presision every 1000 
 ## SSD
 
 **Note**: Select the SSD kernel!
+
+
 Under ssd_keras/ one can find the scripts for training (cvsp_ssd300_training_custom.ipynb) and evaluating (cvsp_ssd300_evaluation.ipynb) SSD. Open them by using Jupyter, on a remote host run (Port forwarding must be enabled):
 
 > jupyter notebook --no-browser --port=8081
@@ -234,6 +237,7 @@ If you just want to redo the evaluation follow these steps:
 ## RetinaNet
 
 **Note**: Select the RetinaNet kernel!
+
 RetinaNet doesn't use a Jupyter notebook for training. For a detailed guide how to train RetinaNet take a look at the readme under keras_retinanet/README.md. 
 
 If you just want to redo the training use this command:
