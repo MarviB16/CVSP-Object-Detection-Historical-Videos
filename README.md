@@ -260,7 +260,7 @@ If you want to evaluate run:
 
     python keras_retinanet/bin/evaluate.py --gpu=1 --backbone=resnet152 --score-threshold=0.05 --iou-threshold=0.5  pascal /path/to/VOCTemplateTest/VOC2019/ snapshots/resnet152_pascal_05.h5
 **Note:** Exchange the backbone to fit the weights (mobilenet224_1.0, resnet50, resnet152)
-
+**Note:** This will also save the precision-recall-curves for civilian and soldier to the keras_retinanet/ folder.
 ## Problems and solutions
 
  - Darknet can't read input image
