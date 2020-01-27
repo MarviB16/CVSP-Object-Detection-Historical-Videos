@@ -6,6 +6,8 @@
 *.74
 *.mp4
 *.list
+*.png
+*.jpg
 
 #custom folder
 custom_scripts/darknet_train/
