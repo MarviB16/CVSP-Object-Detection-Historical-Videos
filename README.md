@@ -14,6 +14,15 @@ For this evaluation Anaconda version 4.8.0, has been used.
 
 The util evironment is used for the custom scripts.
 
+With Anaconda installed the installation is quit simple. First create the environment by running:
+
+    conda create -n Util --file util.txt
+
+then install the kernel into Jupyter by first activating the environment and then by running:
+
+    conda activate Util
+    python -m ipykernel install --user --name Util --display-name "Util"
+
 #### SSD
 
 The SSD environtment is used for the training and evaluation of SSD.
@@ -54,6 +63,10 @@ to install the kernel to Jupyter.
 #### Darknet
 
 As darknet doesn't use python (for training) no conda environment is needed.
+
+## Jupyter
+
+	//todo
 
 ## Custom scripts
 
