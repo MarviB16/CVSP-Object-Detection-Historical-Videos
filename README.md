@@ -100,7 +100,7 @@ On a local machine run:
 
 > jupyter notebook
 
-Then open custom_scripts/copyImages.ipynb.
+Then open custom_scripts/copyImages.ipynb. Change the path to the correct folders and run the program.
 ### First, set the paths for the input images and groundtruth:
 **Note**: use the following folder structure:
 
@@ -109,7 +109,8 @@ Then open custom_scripts/copyImages.ipynb.
     path/to/some_folder/groundtruth			<-- Contains the darknet groundruth (Output of OpenLabeling)
     path/to/some_folder/groundtruth_voc		<-- Contains the voc groundtruth (Output of OpenLabeling)
 
-**Optionally**: The standard image input format is .png, if .jpg is used, adapt the code
+**Optionally**: The standard image input format is .png, if .jpg is used, adapt the code (Cell 3 line 39 and cell 4 line 30)
+
 **Optionally**: By standard the darknet groundtruth is filtered, so only civilian, soldier and civil vehicle is annotated, if you use a different dataset or want to train with all classes, remove or comment this section.
 
 ### Second, run the script:
@@ -167,10 +168,13 @@ Copy:
 
 ## Darknet
 
+| Setting | Civilian | Soldier |
+|--|--|--|
+| With Aug. | 16,56 AP & 0,12 RC | 0,00 AP & 0,00 RC |
+| No Training | 36,94 AP & 0,31 RC | - |
+
 To install darknet and its prerequisites please follow the instructions of the original repo:
 https://github.com/AlexeyAB/darknet#requirements
-
-### Training
 
 After installing darknet and preparing the images and groundtruth, one must prepare the dataset. Instructions for this can be found here:
 
@@ -240,7 +244,7 @@ If you just want to redo the evaluation follow these steps:
 
 ## RetinaNet
 
-Precision-Recall-Curve Civilian    |  Precision-Recall-Curve Soldier
+Precision-Recall-Curve Civilian (ResNet50)   |  Precision-Recall-Curve Soldier (ResNet50)
 :-------------------------:|:-------------------------:
 ![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/civilian_retinanet_50.png)  |  ![](https://github.com/MarviB16/CVSP-Object-Detection-Historical-Videos/blob/master/img/soldier_retinanet_50.png)
 
@@ -273,7 +277,13 @@ If you want to evaluate run:
 
  - Darknet can't read input image
 	 - Solution: Don't use OpenCV to save the image, use Scipy
+	 - Other solution: Instead of using relative paths in the train, val and test.txt use the absolute path. This is done by replacing the relative paths in the custom script. (Cell 3 line 90 and 107, as well as Cell 4 line 77)
  - While installing the pip requirements with RetinaNet you encounter the Error 13 Permission denied?
 	 - Check which pip is used, by running "which pip". You should see that it uses the system python and pip. To fix this modify the PATH system variable, such that the path to anaconda is first. (`echo $PATH` `export PATH=/path/to/anaconda3/envs/RetinaNet/bin:/path/to/python/bin`)
  - How do i show the code line in Jupyter?
 	 - ESC then l (small L), has to be done per cell.
+ - Problems while compiling Darknet?
+ 	 - Remove the anaconda paths from the path environment (/path/to/anaconda3/...) as cmake and make could use the (incomplete) cuda and opencv from anaconda instead of the installed versions from the system.
+	 - Dont use OpenCV 3.4.1 in this repo we used 3.4.0, but every OpenCV >= 2.4 should work, according to the author.
+ - If you run out of memory, change the batch size of the network. For yolo this is at the top of the .cfg file, though yolo also provides the option of subdivision, which is perferable (increase the subdivision to 32/64).
+	 
