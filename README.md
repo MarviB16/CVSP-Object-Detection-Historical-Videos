@@ -1,5 +1,22 @@
 # CVSP-Object-Detection-Historical-Videos
 
+1. [Overview](#overview)
+2. [Conda](#conda)
+3. [Jupyter](#jupyter)
+4. [Custom scripts](#custom-scripts)
+5. [Darknet](#darknet)
+6. [Single Shot Detector](#ssd)
+7. [RetinaNet](#retinanet)
+8. [Problems and solutions](#problems-and-solutions)
+
+## Overview
+
+In this repo three different object detection networks are compared and evaluated on historical images (1938-1945):
+
+ - https://github.com/AlexeyAB/darknet (Darknet YoloV3)
+ - https://github.com/fizyr/keras-retinanet (RetinaNet)
+ - https://github.com/pierluigiferrari/ssd_keras (Single Shot Detector (SSD))
+
 ## Conda
 
 ### Installation
