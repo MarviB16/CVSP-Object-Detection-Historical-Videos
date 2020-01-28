@@ -14,8 +14,11 @@
 In this repo three different object detection networks are compared and evaluated on historical images (1938-1945):
 
  - https://github.com/AlexeyAB/darknet (Darknet YoloV3)
+ 	- [Paper YoloV3](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
  - https://github.com/fizyr/keras-retinanet (RetinaNet)
+ 	- [Paper RetinaNet](https://arxiv.org/abs/1708.02002)
  - https://github.com/pierluigiferrari/ssd_keras (Single Shot Detector (SSD))
+ 	- [Paper Single Shot Detector](https://arxiv.org/abs/1512.02325)
 
 ## Conda
 
