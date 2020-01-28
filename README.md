@@ -166,7 +166,7 @@ Copy:
     darknet_train/images/*.jpg --> VOCTemplate/VOC2019/JPEGImages
     darknet_train/groundtruth_voc/*.txt --> VOCTemplate/VOC2019/Annotations
 
-	darknet_val/val_voc_voc.txt --> VOCTemplate/VOC2019/ImageSets/Main/val.txt
+	darknet_val/val_voc.txt --> VOCTemplate/VOC2019/ImageSets/Main/val.txt
     darknet_val/images/*.jpg --> VOCTemplate/VOC2019/JPEGImages
     darknet_val/groundtruth_voc/*.txt --> VOCTemplate/VOC2019/Annotations
 
@@ -251,6 +251,7 @@ For a detailed description on how to train the network read the readme from the 
 
 If you just want to redo the training follow these steps:
 
+ 0. Open cvsp_ssd300_training_custom.ipynb
  1. Change the path in **line 23** in **cell 2.1** to the just downloaded weights (but then don't run run cell 2.2).
  2. **OR:** Change the path in **line 2** in **cell 2.2** to previously trained weights to continue training.
  3. Change the paths in **lines 13, 16, 20 and 21** in **cell 3** to the respective dataset paths.
@@ -258,9 +259,10 @@ If you just want to redo the training follow these steps:
  5. Change **initial epoch**, **final epoch** and **steps per epoch** to your desired numbers.
 
 If you just want to redo the evaluation follow these steps:
+ 0. Open cvsp_ssd300_evaluation.ipynb
  1. Change the path in **line 32** in **cell 1.1** to the trained weights.
  2. Change **lines 4 - 6** in **cell 2** to your dataset.
- 4. Run all sections **until cell 5**. This gives you the mAP and the Precision-Recall-Curve for civilian and soldier.
+ 3. Run all sections **until cell 5**. This gives you the mAP and the Precision-Recall-Curve for civilian and soldier.
 
 ## RetinaNet
 
