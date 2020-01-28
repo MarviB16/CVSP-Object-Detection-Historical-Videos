@@ -109,7 +109,8 @@ Then open custom_scripts/copyImages.ipynb. Change the path to the correct folder
     path/to/some_folder/groundtruth			<-- Contains the darknet groundruth (Output of OpenLabeling)
     path/to/some_folder/groundtruth_voc		<-- Contains the voc groundtruth (Output of OpenLabeling)
 
-**Optionally**: The standard image input format is .png, if .jpg is used, adapt the code
+**Optionally**: The standard image input format is .png, if .jpg is used, adapt the code (Cell 3 line 39 and cell 4 line 30)
+
 **Optionally**: By standard the darknet groundtruth is filtered, so only civilian, soldier and civil vehicle is annotated, if you use a different dataset or want to train with all classes, remove or comment this section.
 
 ### Second, run the script:
