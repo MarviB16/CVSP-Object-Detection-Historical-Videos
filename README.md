@@ -308,4 +308,8 @@ If you want to evaluate run:
  	 - Remove the anaconda paths from the path environment (/path/to/anaconda3/...) as cmake and make could use the (incomplete) cuda and opencv from anaconda instead of the installed versions from the system.
 	 - Dont use OpenCV 3.4.1 in this repo we used 3.4.0, but every OpenCV >= 2.4 should work, according to the author.
  - If you run out of memory, change the batch size of the network. For yolo this is at the top of the .cfg file, though yolo also provides the option of subdivision, which is perferable (increase the subdivision to 32/64).
-	 
+
+## Downloads
+
+[Weights](https://drive.google.com/file/d/19PGb0beXu47UNQM6vZP7P0_AP5C3ZFyJ/view?usp=sharing)
+[Dataset (Raw)](www.tu-dresden.de)
