@@ -8,6 +8,7 @@
 6. [Single Shot Detector](#ssd)
 7. [RetinaNet](#retinanet)
 8. [Problems and solutions](#problems-and-solutions)
+9. [Downloads](#downloads)
 
 ## Overview
 
