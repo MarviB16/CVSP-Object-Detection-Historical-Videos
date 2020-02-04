@@ -313,5 +313,3 @@ If you want to evaluate run:
 ## Downloads
 
 [Weights](https://drive.google.com/file/d/19PGb0beXu47UNQM6vZP7P0_AP5C3ZFyJ/view?usp=sharing)
-
-[Dataset (Raw)](https://drive.google.com/file/d/1rvpjXNzaoufnf40-_lgMNDVz1bPY8XiT/view?usp=sharing)
